@@ -20,35 +20,21 @@ namespace LoginFormSQL
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-MP2O6F5;Initial Catalog=db_LoginFormSQL;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-MP2O6F5;Initial Catalog=db_LoginSQL;Integrated Security=True");
 
-            //Exception Handling Statement (try, catch, finally)
-            try
-            {
-                sqlCon.Open();
+            string query = "SELECT * FROM loginsTable WHERE username = '" + txtUserLog + "' and password='" + txtPwdLog + "'";
 
-                SqlCommand SqlComm = new SqlCommand (@"select * FROM loginsTable WHERE username =@txtUserLog 
-                and and password=@txtPwdLog", sqlCon);
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlCon);
 
-                /*A params approach to avoid SQL injection problems and move the job of properly
-                 quoting values to the framework code*/
-                SqlComm.Parameters.AddWithValue("@txtUserLog", txtUserLog.Text);
-                SqlComm.Parameters.AddWithValue("@txtPwdLog", txtPwdLog.Text); //gotta make safer later
+            DataTable datatbl = new DataTable();
 
-                int result = (int)SqlComm.ExecuteScalar();
+            sda.Fill(datatbl);
 
-                if (result > 0)
-                    MessageBox.Show("Login successful. Welcome " + txtUserLog.Text + "!");
-                else
-                    MessageBox.Show("This username and password combination does not exist!" +
-                        "\nPlease try again.", "Error", MessageBoxButtons.OK);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Unexpected error:" + ex.Message);
-            }
-            /*The Finally block, while optional, is actually obliatory when working with databases
-             because it's the block that closes the connection*/
+            if (datatbl.Rows.Count == 1)
+                MessageBox.Show("Login successful. Welcome " + txtUserLog.Text + "!");
+            else
+                MessageBox.Show("This username and password combination does not exist!" +
+                    "\nPlease try again.", "Error", MessageBoxButtons.OK);
         }
     }
 }

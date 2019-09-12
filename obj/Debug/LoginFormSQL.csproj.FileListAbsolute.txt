@@ -1,0 +1,10 @@
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\bin\Debug\LoginFormSQL.exe.config
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\bin\Debug\LoginFormSQL.exe
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\bin\Debug\LoginFormSQL.pdb
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.csprojAssemblyReference.cache
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.FrmMain.resources
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.Properties.Resources.resources
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.SignUpForm.resources
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.csproj.GenerateResource.cache
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.exe
+C:\Users\Denise\source\repos\LoginFormSQL\LoginFormSQL\obj\Debug\LoginFormSQL.pdb

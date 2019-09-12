@@ -66,6 +66,7 @@
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "Submit";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // btnSignUp
             // 
