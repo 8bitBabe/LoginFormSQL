@@ -84,6 +84,7 @@
             this.txtPwdSign.Location = new System.Drawing.Point(176, 85);
             this.txtPwdSign.Multiline = true;
             this.txtPwdSign.Name = "txtPwdSign";
+            this.txtPwdSign.PasswordChar = '*';
             this.txtPwdSign.Size = new System.Drawing.Size(222, 22);
             this.txtPwdSign.TabIndex = 7;
             // 
@@ -109,6 +110,7 @@
             this.txtPwd2Sign.Location = new System.Drawing.Point(176, 131);
             this.txtPwd2Sign.Multiline = true;
             this.txtPwd2Sign.Name = "txtPwd2Sign";
+            this.txtPwd2Sign.PasswordChar = '*';
             this.txtPwd2Sign.Size = new System.Drawing.Size(222, 22);
             this.txtPwd2Sign.TabIndex = 12;
             // 

@@ -36,5 +36,12 @@ namespace LoginFormSQL
                 MessageBox.Show("This username and password combination does not exist!" +
                     "\nPlease try again.", "Error", MessageBoxButtons.OK);
         }
+
+        private void BtnSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUpForm suf = new SignUpForm();
+            suf.ShowDialog();
+        }
     }
 }

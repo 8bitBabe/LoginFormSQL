@@ -33,8 +33,12 @@ namespace LoginFormSQL
             if (datatbl.Rows.Count > 0)
                 MessageBox.Show("Username has already been registered");
             else
-                MessageBox.Show("This username and password combination does not exist!" +
-                    "\nPlease try again.", "Error", MessageBoxButtons.OK);
+            {
+                if (txtPwdSign == txtPwd2Sign)
+                    newUser();
+                else
+                    MessageBox.Show("Passwords do not match. Please verify.");
+            }
         }
 
         private void newUser()
@@ -62,7 +66,10 @@ namespace LoginFormSQL
                     }
                 }
 
-            MessageBox.Show("Login successful. Welcome " + txtUserLog.Text + "!");
+            MessageBox.Show("Sign up succesful!");
+            this.Hide();
+                FrmMain fm = new FrmMain();
+                fm.ShowDialog();
 
             }
             catch (Exception ex)
