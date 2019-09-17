@@ -66,8 +66,8 @@ namespace LoginFormSQL
                     }
                 }
 
-            MessageBox.Show("Sign up succesful!");
-            this.Hide();
+                MessageBox.Show("Sign up succesful!");
+                this.Hide();
                 FrmMain fm = new FrmMain();
                 fm.ShowDialog();
 
@@ -78,6 +78,13 @@ namespace LoginFormSQL
             }
             /*The Finally block, while optional, is actually obliatory when working with databases
              because it's the block that closes the connection*/
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmMain fm = new FrmMain();
+            fm.ShowDialog();
         }
     }
 }

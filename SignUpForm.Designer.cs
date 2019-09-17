@@ -78,6 +78,7 @@
             this.btnSignUp.TabIndex = 8;
             this.btnSignUp.Text = "Cancel";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtPwdSign
             // 

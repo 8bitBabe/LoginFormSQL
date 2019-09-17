@@ -39,9 +39,19 @@ namespace LoginFormSQL
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SignUpForm suf = new SignUpForm();
-            suf.ShowDialog();
+            this.Hide(); ///hides current window
+            SignUpForm suf = new SignUpForm(); //opens other new window
+            suf.ShowDialog(); //shows aforementioned window
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); //why doesn't the X do this?
         }
     }
 }
