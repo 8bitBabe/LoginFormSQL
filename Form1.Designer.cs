@@ -34,7 +34,6 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.LblUserName = new System.Windows.Forms.Label();
             this.LblPwd = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUserLog
@@ -96,24 +95,11 @@
             this.LblPwd.TabIndex = 5;
             this.LblPwd.Text = "Password:";
             // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Crimson;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Location = new System.Drawing.Point(181, 181);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(95, 32);
-            this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 232);
-            this.Controls.Add(this.btnCancel);
+            this.ClientSize = new System.Drawing.Size(438, 183);
             this.Controls.Add(this.LblPwd);
             this.Controls.Add(this.LblUserName);
             this.Controls.Add(this.btnLogin);
@@ -139,7 +125,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Label LblPwd;
-        private System.Windows.Forms.Button btnCancel;
     }
 }
 

@@ -48,10 +48,5 @@ namespace LoginFormSQL
         {
 
         }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Application.Exit(); //double window if restarting the page when coming back from signup
-        }
     }
 }
