@@ -34,7 +34,7 @@ namespace LoginFormSQL
                 MessageBox.Show("Username has already been registered");
             else
             {
-                if (txtPwdSign == txtPwd2Sign) //no pwds are alike???
+                if (this.txtPwdSign.Text == this.txtPwd2Sign.Text)
                     newUser();
                 else
                     MessageBox.Show("Passwords do not match. Please verify.");
