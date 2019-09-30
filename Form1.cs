@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+//using System.Configuration;
 
 namespace LoginFormSQL
 {
@@ -20,8 +21,11 @@ namespace LoginFormSQL
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-MP2O6F5;Initial Catalog=db_LoginSQL;Integrated Security=True");
+            //SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-MP2O6F5;Initial Catalog=db_LoginSQL;Integrated Security=True");
 
+
+            //preferred way below. This is acheived manipulating the app.config
+            SqlConnection sqlCon = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString);
             string query = "SELECT * FROM loginsTable WHERE username = '" + txtUserLog + "' and password='" + txtPwdLog + "'";
 
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlCon);
