@@ -50,7 +50,7 @@ namespace LoginFormSQL
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            //dozens of mistakes, this doesn't seem to want to work...
         }
     }
 }
